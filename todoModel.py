@@ -16,7 +16,7 @@ class TodoModel:
 
     @classmethod
     def add_item(cls, item):
-        _cursor.execute('INSERT INTO todotext) VALUES(?)', (item,))
+        _cursor.execute('INSERT INTO todo(text) VALUES(?)', (item,))
         _conn.commit()
 
     @classmethod
